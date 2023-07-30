@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagen dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/img-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/img-m.png" type="image/png">
+        <img src="imagens/img-G.png" alt="img-G">
+        
+        <!-- O source media type serve para que na hora que reduzir ou aumentar o tamanho da ABA dá página, ele ira aumentar ou diminuir a imagem. -->
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Irei aprender sobre como reproduzir áudio no html5</p>
+    <audio src="midia/cebolinha_xingando_a_monica.mp3"  controls autoplay></audio>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="midia/vou-te-comer_2.mp3" type="audio/mp3">
+        <!--
+        <source src="midia/vou-te-comer_2.ogg" type="audio/ogg">
+
+        <source src="midia/vou-te-comer_2.wav" type="audio/wav">
+        o wav não é recomendado por ser pesado
+
+        preload="auto" -> significa que vai carregar a sua página assim que carregar o áudio junto, se o áudio for grande então a vai carregar mais lento !
+        preload="metadata" -> vai carregar poucas coisas como, nome do arquivo, data, etc.
+        preload="none" -> vai carregar nada, só quando o usuario apertar play.
+        loop -> como já diz, para dar loop eterno até pausar o áudio
+        -->
+    </audio>
+</body>
+</html>

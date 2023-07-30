@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(32, 31, 31);
+}
+    h1 {
+        text-align: center;
+        color: white;
+    }
+    img {
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+    }
+    iframe {
+        display: block;
+        margin: auto;
+    }
+    a {
+        text-align: center;
+    }

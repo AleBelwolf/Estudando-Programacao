@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {
+            font: normal 1.3em Arial;
+            background-color: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        interaja...
+    </div>
+</body>
+<script>
+    var a = window.document.getElementById("area")
+    /* 
+    Este comando ().addEventListener serve para substituir os comando do html (onmouseclick, onmouseenter e onmouseout) 
+    */
+    a.addEventListener("click", clicar)
+    a.addEventListener("mouseenter", entrar)
+    a.addEventListener("mouseout", sair)
+
+    function clicar() {
+        a.innerText = "Clicou!"
+        a.style.background = "red"
+    }
+    function entrar() {
+        a.innerText = "Entrou!"
+        a.style.background = "green"
+    }
+    function sair() {
+        a.innerText = "Saiu!"
+        a.style.background = "orange"
+    }
+</script>
+</html>

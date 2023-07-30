@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando outra fonte externas baixada</title>
+    <style>
+        @font-face {
+            font-family: 'Love'; /* aqui é pra dar nome a font */
+            src: url(fonts/Valentine\ Moment.ttf) format(truetype);
+            font-weight: normal;
+            font-style: normal;
+            /*
+            estes são os tipo de format
+            - opentype (otf)
+            - truetype (ttf)
+            - truetype-aat  (aple advanced typography)
+            - embedded-opentype
+            - svg
+            */
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            font-family: 'Love', Times, serif;
+            font-size: 4em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, fugiat ex dolorum amet libero tempore nesciunt harum architecto voluptatibus mollitia asperiores quis vel? Atque, optio quibusdam earum omnis a sequi.</p>
+</body>
+</html>

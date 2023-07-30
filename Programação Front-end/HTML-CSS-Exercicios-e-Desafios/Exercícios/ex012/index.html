@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo com html5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    
+    <video width="500" poster="imagens/Team DRX.jpg" controls>
+        <source src="midia/FDownloader.net-963942797988746-(1080p).mp4" type="video/mp4">
+        <!--
+
+        <source src="midia/FDownloader.net-963942797988746-(1080p).m4v" type="video/mp4">
+
+        <source src="midia/FDownloader.net-963942797988746-(1080p).webm" type="video/webm">
+
+        <source src="midia/FDownloader.net-963942797988746-(1080p).ogv" type="video/ogg">
+
+        A ordem tem total influencia, primeira vê se o navegador é compativel com mp4 depois o m4v e assim por diante.
+        Hospedar videos diferentes tem seu prós e contras
+        prós: Para a maioria dos navegadores, 1 destes formatos de video deverá funcionar.
+        contra: Consome muito trafego de dados, isto pode pesar no bolso do cliente. Então tomar muito cuidado com isto!
+        -->
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+    <h1>Inserindo vídeo no youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rvNNx0C_O-M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <!-- Vai no vídeo do youtube que deseja colocar, em compartilhar, clique em incorporar o proprio ytb te dá a sintaxe -->
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício - primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(66, 98, 240);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.4em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Inciando estudos com DOM</h1>
+    <p>Aqui vai o Resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+</body>
+<script>
+    var p1 = window.document.getElementsByTagName('p')[0]
+    var p2 = window.document.getElementsByTagName('p')[1]
+    var p3 = window.document.getElementById('msg')
+
+    /* .getElementsByTagName serve para selecionar tags que está no html o número em [] serve para selecionar qual paragrafo pois getElements tá no plural */
+    window.document.write(`Está escrito assim: ${p1.innerText} <br>`)
+   
+    /* p2.innerHTML seleciona o HTML inteiro, então já vem com o estilo CSS */
+    window.document.write(`Está escrito assim: ${p2.innerHTML}<br>`)
+
+    p3.style.background = 'green'
+    // p3.innerText = 'Estou aguardando....'
+
+    // para estilizar os textos de java script, é querySelectior() aprendido aqui e no ex004
+</script>
+</html>

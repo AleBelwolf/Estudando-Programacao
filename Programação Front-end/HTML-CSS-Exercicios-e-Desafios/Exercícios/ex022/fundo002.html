@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalização dos fundos</title>
+    <style>
+        div.screen {
+            display: inline-block;
+            border: 2px solid black;
+            width: 800px;
+            height: 400px;
+            border-radius: 10px;
+            background-color: lightgray;
+        }
+        div#q1 {
+            background-image: url(https://www.directivegroup.com/wp-content/uploads/2017/03/smile-9047-9380-hd-wallpapers-1.jpg);
+            background-size: 20%;
+            background-repeat: repeat;
+        }
+        div#q2 {
+            background-image: url(https://www.directivegroup.com/wp-content/uploads/2017/03/smile-9047-9380-hd-wallpapers-1.jpg); 
+            background-size: 20%;
+            background-repeat: repeat-x; 
+        }
+        div#q3 {
+            background-image: url(https://www.directivegroup.com/wp-content/uploads/2017/03/smile-9047-9380-hd-wallpapers-1.jpg); 
+            background-size: 20%;
+            background-repeat: repeat-y; 
+        }
+        div#q4 {
+            background-image: url(https://www.directivegroup.com/wp-content/uploads/2017/03/smile-9047-9380-hd-wallpapers-1.jpg); 
+            background-size: 20%;
+            background-repeat: no-repeat; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Repetições em background-image</h1>
+    <h2>background-repeat: repeat;</h2>
+    <p>Repete a imagem tanto no sentido vertical, quanto horizontal (padrão).</p>
+    <div class="screen" id="q1">
+    </div>
+    <h2>background-repeat: repeat-x;</h2>
+    <p>Repete apenas no eixo horizontal</p>
+    <div class="screen" id="q2">
+    </div>
+    <h2>background-repeat: repeat-y;</h2>
+    <p>Repete apenas no eixo vertical.</p>
+    <div class="screen" id="q3">
+    </div>
+    <h2>background-repeat: no-repeat;</h2>
+    <p>Não repete em nenhum eixo. A imagem só é carregada uma única vez.</p>
+    <div class="screen" id="q4">
+    </div>
+</body>
+</html>

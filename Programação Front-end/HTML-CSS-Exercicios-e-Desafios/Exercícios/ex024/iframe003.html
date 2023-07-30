@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel corporis fugiat tempore sed quod! Obcaecati, eligendi impedit! Id nemo, quas voluptatum eum tempore commodi molestias deserunt perspiciatis eveniet, repellat error.</p>
+
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem mollitia dolorum dignissimos, iusto enim ipsam reprehenderit tenetur magnam, hic molestiae debitis voluptate. Odio perspiciatis iure quae libero quas? Excepturi, modi?</p>
+
+    <iframe srcdoc="
+    <h1> Este é o (srcdoc) que serve para fazer comando dentro </h1>
+    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem tempora tempore, quasi optio quos, consequatur laborum, dolor ex labore cupiditate cumque neque similique impedit pariatur consectetur veniam adipisci? Impedit, nihil? </p>
+    <p>É possivel colocar todo comando html, o css acredito que não</p>
+    " frameborder="1" name="frame">
+        <p>Infelizmente seu navevagador não é compatível</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, accusamus quas laborum ullam eum voluptates inventore. Tempore quos, accusantium quam facere esse cupiditate aperiam, voluptates quisquam distinctio ea, quaerat et! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus porro voluptatibus quibusdam expedita quasi! Culpa tempore vero iste incidunt recusandae eaque, eligendi nam harum. Nobis facilis eos officiis molestias inventore.</p>
+</body>
+</html>

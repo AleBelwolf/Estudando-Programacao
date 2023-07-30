@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+            font-size: 1.5em;
+        }
+        #r {
+         background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="r"></div>
+    <p id="r"></p>
+    <p id="r"></p>
+</body>
+<script>
+    var nome = window.prompt("Qual é seu nome ?")
+    var a = document.querySelector(`div#r`)
+    var b = document.querySelector(`p#r`)
+    var c = document.querySelector(`p#r`)
+
+    document.write(`Olá, ${nome}! Seu nome  tem ${nome.length} letras.<br>`)
+    document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}.<br>`)
+    document.write(`Seu nome em minusculas é ${nome.toLowerCase()}.<br>`)
+
+    /* 
+    Este comando toLocalString serve para deixar o valor em dinheiro Real, Dolar, Euro, etc..
+    */
+    var n1 = 1545.5
+    
+    a.innerHTML = (`Este valor em ${n1.toLocaleString("pt-BR", {style: "currency", currency: "BRL"})}<br>`)
+    b.innerHTML = (`Este valor em ${n1.toLocaleString("pt-BR", {style: "currency", currency: "USD"})}<br>`)
+    c.innerHTML += (`Este valor em ${n1.toLocaleString("pt-BR", {style: "currency", currency: "EUR"})}`)
+</script>
+</html>

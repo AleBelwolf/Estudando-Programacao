@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando links externos e internos</h1>
+
+    <h2>Link externo</h2>
+    <p>Vc pode acessar meu <a href="https://www.facebook.com/profile.php?id=100008814528729" target="_blank" rel="external">Facebook</a></p>
+    <p>Deixa um follow na <a href="https://www.twitch.tv/ale_belwolf" target="_blank" rel="external">Twitch</a></p>
+        <!-- target="_blank" faz com que cria uma aba em branco e não sobreponha a aba que está a primeira página.
+        rel="external" para indicar q é um link externo... -->
+    <p>Vc pode acessar meu perfil no <a href="https://github.com/AleBelwolf" target="_blank" rel="external">GitHub</a></p>
+
+    <h2>Link interno</h2>
+    <h2>Quer acessar a segunda pagina ?</h2>
+    <p>Clique <a href="pag002.html" rell="next">aqui</a></p>
+        <!-- next faz com que o google entenda que a pag002 é a próxima página -->
+    <p>Você também pode acessar nossa <a href="noticias/pag003.html" rell="next" target="_self">página de notícias</a></p>
+
+    <h2>Links para download!</h2>
+    <ul>
+        <li><a href="PDF/Esforços Internos Solicitantes.pdf" download="Esforços Internos Solicitantes.pdf" type="application/pdf">Download em PDF</a></li>
+        <!-- Por algum motivo não sei o por que não está fazendo download do arquivo pdf ... -->
+        <li><a href="PDF/Esforços Internos Solicitantes - Copia.zip" download="Esforços Internos Solicitantes - Copia.zip" type="application/zip">Download em ZIP</a></li>
+        <!-- Aqui está fazendo download do arquivo zip corretamente ... -->
+    </ul>
+</body>
+</html>
