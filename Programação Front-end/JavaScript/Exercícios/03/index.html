@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Exercício 3</h1>
+    <main class="container">
+        <div id="msg">
+            <h3>Preencha as informações abaixo</h3>
+        </div>
+        <div class="container">
+            <div class="input">
+                <label for="xinicio">Início: </label>
+                <input type="number" name="inicio" id="xinicio">
+            </div>
+            <div class="input">
+                <label for="xfim">Fim: </label>
+                <input type="number" name="fim" id="xfim">
+            </div>
+            <div class="input">
+                <label for="xpasso">Passo: </label>
+                <input type="number" name="passo" id="xpasso">
+            </div>
+            <input type="submit" value="contar" id="contar" onclick="contar()">
+        </div>
+        <div id="res">
+            Preparando a contagem . . .
+        </div>
+    </main>
+    <footer>
+        Criado por José Alejandro
+    </footer>
+    <script src="script.js"></script>
+</html>

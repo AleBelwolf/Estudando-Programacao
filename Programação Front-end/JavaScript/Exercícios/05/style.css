@@ -1,0 +1,52 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(53, 53, 180);
+}
+body > h1 {
+    color: white;
+    text-align: center;
+    margin: 20px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+main.container {
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+
+    margin: auto;
+    width: 480px;
+    height: auto;
+    padding: 10px;
+}
+div.input{
+    flex-direction: column;
+    margin: 10px 0px 10px 2px;
+}
+select#tab {
+    width: 140px;
+}
+label {
+    margin-left: 4px;
+}
+select {
+    margin: 20px 0px 0px 0px;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 0px 0px 10px 10px;
+
+    width: 480px;
+    margin: auto;
+}
